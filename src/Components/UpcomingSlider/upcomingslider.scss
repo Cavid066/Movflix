@@ -1,0 +1,36 @@
+$black: #171d22;
+$yellow: #e4d804;
+
+
+.poster {
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+
+        &__year {
+            color: $yellow;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        align-items: center;
+        &__info {
+            display: flex;
+            span {
+                display: flex;
+                align-items: center;
+                align-content: center;
+                margin-left: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+$black: #171d22;
+$yellow: #e4d804;
+
+
+
+.container {
+    width: 80%;
+    margin: auto;
+
+    span {
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+
+    h1 {
+        font-weight: bold;
+        font-family: inherit;
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: #6a6a6a;
+        margin-bottom: 20px;
+    }
+
+    .hd {
+        font-size: 60px;
+        text-shadow: 0px 3px 24px rgb(160 160 160 / 9%);
+        line-height: 1;
+        margin-bottom: 0;
+        color: #d81c2b;
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #d81c2b;
+        font-weight: bold;
+    }
+}

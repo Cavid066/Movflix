@@ -1,0 +1,66 @@
+$black: #171d22;
+$yellow: #e4d804;
+
+.icon-yellow{
+    color: $yellow;
+}
+.slider {
+    position: relative;
+    background-color: #171d22;
+    &__text {
+        position: absolute;
+        top: 25%;
+        left: 10%;
+
+        h1 {
+            font-size: 60px;
+            width: 60%;
+            color: #fff;
+
+            span {
+                color: $yellow;
+            }
+        }
+
+        &__logo {
+            font-size: 25px;
+            color: $yellow;
+            font-weight: bold;
+        }
+
+        &__sub {
+            display: flex;
+            color: #fff;
+            span {
+                display: flex;
+                margin-right: 15px;
+                li{
+                    margin-right: 5px;
+                    transition: 0.3s ease-in-out;
+                    cursor: pointer;
+                    &:hover{
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+        &__btn {
+            background-color: $black;
+            font-size: 16px;
+            border: 2px solid $yellow;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            transition: 0.3s ease-in-out;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            &:hover{
+                background-color: $yellow;
+                color: $black;
+            }
+        }
+        
+    }
+}

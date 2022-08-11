@@ -1,0 +1,37 @@
+$black: #171d22;
+$yellow: #e4d804;
+
+
+
+.nav{
+    background-color: $black;
+    height: 90px;
+    display: flex;
+    &_container{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        &__logo{
+            h3{
+                font-size: 30px;
+                span{
+                    color: $yellow;
+                }
+            }
+        }
+        &__items{
+            ul{
+                display: flex;
+                align-items: center;
+                li{
+                    list-style: none;
+                    font-size: 20px;
+                    margin-left: 4rem;
+                }
+            }
+        }
+    }
+}

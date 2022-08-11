@@ -1,0 +1,20 @@
+$black: #171d22;
+$yellow: #e4d804;
+
+
+.upcoming {
+    background-color: $black;
+    margin: 0;
+    &__container {
+        width: 80%;
+        margin: auto;
+        &__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &__text{
+                color: #fff;
+            }
+        }
+    }
+}

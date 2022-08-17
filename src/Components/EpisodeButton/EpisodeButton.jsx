@@ -1,7 +1,9 @@
 import { Box, Modal } from '@mui/material'
 import React, { useState } from 'react'
 import '../ButtonModal/buttonmodal.scss'
-
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import '../EpisodeButton/EpisodeButton.scss'
 
 const style = {
     position: 'absolute',
@@ -10,7 +12,7 @@ const style = {
     transform: 'translate(-50%, -50%)',
     width: 800,
     height: 400,
-    boxShadow: 24,
+    // boxShadow: 24,
   };
 function ButtonModal() {
 
@@ -20,7 +22,11 @@ function ButtonModal() {
 
     return (
         <div>
-            <button className='btn' onClick={handleOpen}>Open modal</button>
+            <button className='episode_details' onClick={handleOpen}>
+            <div className="episode_no">
+                <span> <PlayArrowIcon className='play_icon'/> Episode 1 - The World Is Purple</span> 
+            </div>
+            </button>
             <Modal
                 open={open}
                 onClose={handleClose}

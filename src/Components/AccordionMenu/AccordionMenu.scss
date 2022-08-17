@@ -1,0 +1,63 @@
+$dark: #17141A;
+$yellow: #E4D804;
+
+// .tab_headd{
+//     background-color: transparent;
+//     color: red;
+// }
+.tab_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    h5{
+        color: $yellow;
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+
+.accordion_details{
+    background-color: #040406;
+    padding: 15px;
+    color: white;
+}
+
+.episode_details{
+    cursor: pointer;
+    // border-bottom: 1px solid #242426;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .episode_no{
+        span{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.1s ease-in-out;
+            font-weight: bold;
+            &:hover{
+                color: $yellow;
+                }
+        }
+        
+        .play_icon{
+            font-size: 19px;
+            color: $yellow;
+            margin-right: 10px;
+        }
+    }
+    .duration{
+        span{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .duration_icon{
+                font-size: 19px;
+                color: $yellow;
+                margin-right: 10px;
+            }
+        }
+    }
+}

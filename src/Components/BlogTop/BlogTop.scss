@@ -1,0 +1,14 @@
+$dark: #17141A;
+$yellow: #E4D804;
+
+
+.blog_top{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://themebeyond.com/html/movflx/img/bg/breadcrumb_bg.jpg);
+    background-position: center;
+    position: relative;
+    .news_update{
+        position: absolute;
+    }
+}

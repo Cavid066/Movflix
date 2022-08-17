@@ -1,0 +1,23 @@
+$black: #171d22;
+$yellow: #e4d804;
+
+
+
+.btn {
+    background-color: #242c38;
+    font-size: 12px;
+    border: 2px solid $yellow;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        background-color: $yellow;
+        color: $black;
+    }
+}

@@ -27,9 +27,29 @@ $yellow: #e4d804;
                 display: flex;
                 align-items: center;
                 li{
+                    padding: 15px;
+                    cursor: pointer;
                     list-style: none;
-                    font-size: 20px;
-                    margin-left: 4rem;
+                    font-size: 14px;
+                    color: #f0f0f0;
+                    font-weight: 700;
+                    margin-right: 4rem;
+                    position: relative;
+                    .drop_menu{
+                        position: absolute;
+                        top: 100%;
+                        left: -15px;
+                        background-color: red;
+                        color: white;
+                        text-align: start;
+                        ul{
+                            display: flex;
+                            flex-direction: column;
+                            width: 150px;
+                            height: 250px;
+
+                        }
+                    }
                 }
             }
         }

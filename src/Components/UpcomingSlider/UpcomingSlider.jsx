@@ -7,6 +7,8 @@ import 'swiper/css';
 import '../UpcomingSlider/upcomingslider.scss'
 import { useDispatch, useSelector } from 'react-redux';
 import { getMoviesAction } from '../../redux/actions/MoviesAction';
+import {Link} from 'react-router-dom';
+
 function UpcomingSlider({category}) {
     const { movies } = useSelector((state) => state.movies)
 
@@ -24,6 +26,7 @@ function UpcomingSlider({category}) {
                 movies &&
                 movies.filter(x=>x.category == category).map((movie, key) => (
                     <SwiperSlide key={key}>
+                        <Link to={`movie/detail/${movie.id}`}>
                         <div className='poster'>
                             <img src={movie.photo} alt="" />
                             <div className='poster__top'>
@@ -44,6 +47,7 @@ function UpcomingSlider({category}) {
                                 </span>
                             </div>
                         </div>
+                        </Link>
                     </SwiperSlide>
                 ))
             }

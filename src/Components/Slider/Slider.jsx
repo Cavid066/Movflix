@@ -20,7 +20,7 @@ function Slider() {
         >
             <SwiperSlide>
                 <div className='slider'>
-                    <img src="" alt="" />
+                    <img src="https://movflxx.netlify.app/img/banner/banner_bg01.jpg" alt="" />
                     <div className='slider__text'>
                         <p className='slider__text__logo'>ComparFlix</p>
                         <p>
@@ -49,7 +49,7 @@ function Slider() {
             </SwiperSlide>
             <SwiperSlide>
                 <div className='slider'>
-                    <img src="" alt="" />
+                    <img src="https://movflxx.netlify.app/img/banner/banner_bg01.jpg" alt="" />
                     <div className='slider__text'>
                         <p className='slider__text__logo'>ComparFlix</p>
                         <p>
@@ -78,7 +78,7 @@ function Slider() {
             </SwiperSlide>
             <SwiperSlide>
                 <div className='slider'>
-                    <img src="" alt="" />
+                    <img src="https://movflxx.netlify.app/img/banner/banner_bg01.jpg" alt="" />
                     <div className='slider__text'>
                         <p className='slider__text__logo'>ComparFlix</p>
                         <p>

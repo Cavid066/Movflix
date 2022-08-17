@@ -1,10 +1,10 @@
 import React, { useContext, useState } from 'react'
 import '../Header/header.scss'
 import SignIn from '../SignIn/SignIn'
+import {Link} from 'react-router-dom';
+
+
 function Header() {
-
-
-
     return (
         <div className='nav'>
             <div className="nav_container">
@@ -13,11 +13,21 @@ function Header() {
                 </div>
                 <div className='nav_container__items'>
                     <ul>
-                        <li>item 1</li>
-                        <li>item 2</li>
-                        <li>item 3</li>
-                        <li>item 4</li>
-                        <li>item 5</li>
+                        <li>HOME
+                            {/* <div className='drop_menu'>
+                                <ul>
+                                    <li>HOME ONE</li>
+                                    <li>HOME TWO</li>
+                                </ul>
+                            </div> */}
+                        </li>
+                        <li>MOVIE</li>
+                        <li>TV SHOW</li>
+                        <li>PRICING</li>
+                        <Link to={`/blog`}>
+                        <li>BLOG</li>
+                        </Link>
+                        <li>CONTACTS</li>
                     </ul>
                 </div>
                 <div className='nav_container__sidebar'>

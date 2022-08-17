@@ -3,6 +3,7 @@ import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import { UserContext } from "./Context/UserContext";
 import Home from "./page/Home";
+import MyRoute from "./Router/MyRoute";
 
 
 
@@ -14,10 +15,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Home />
+      <MyRoute />
       <Footer />
     </div>
-  );
+  ); 
 }
 
 export default App;

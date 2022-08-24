@@ -56,8 +56,11 @@ export default function CustomizedAccordions() {
   return (
     <div>
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
-        <AccordionSummary className='tab_headd' aria-controls="panel1d-content" id="panel1d-header">
-          <Typography className='tab_head'>
+        <AccordionSummary sx={{
+            color: 'white',
+            background: 'black',
+          }} className='tab_headd' aria-controls="panel1d-content" id="panel1d-header">
+          <Typography  className='tab_head'>
             <div>
                <h3>Season 2</h3> 
             </div>
@@ -110,8 +113,14 @@ export default function CustomizedAccordions() {
         </AccordionDetails>
       </Accordion>
 
+
+
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
-        <AccordionSummary className='tab_headd' aria-controls="panel1d-content" id="panel1d-header">
+        <AccordionSummary  
+          sx={{
+            color: 'white',
+            background: 'black',
+          }} className='tab_headd' aria-controls="panel1d-content" id="panel1d-header">
           <Typography className='tab_head'>
             <h3>Season 1</h3>
             <h5>5 Full Episodes</h5> </Typography>

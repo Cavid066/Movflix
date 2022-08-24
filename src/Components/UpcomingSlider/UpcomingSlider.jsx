@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
-import HdIcon from '@mui/icons-material/Hd';
+// import HdIcon from '@mui/icons-material/Hd';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
 import 'swiper/css';
@@ -35,19 +35,20 @@ function UpcomingSlider({category}) {
                             </div>
                             <div className='poster__bottom'>
                                 <span className='poster__bottom__icon'>
-                                    <HdIcon />
+                                <h4>HD</h4>
                                 </span>
                                 <span className='poster__bottom__info'>
                                     <span>
-                                        <AccessTimeIcon /> 128 min
+                                        <AccessTimeIcon className='duration'/> 128 min
                                     </span>
                                     <span>
-                                        <ThumbUpAltIcon /> 3.5
+                                        <ThumbUpAltIcon className='like'/> 3.5
                                     </span>
                                 </span>
                             </div>
                         </div>
                         </Link>
+
                     </SwiperSlide>
                 ))
             }

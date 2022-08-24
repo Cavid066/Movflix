@@ -1,34 +1,51 @@
-import { Grid } from '@mui/material'
 import React from 'react'
-import '../Services/services.scss'
-import banner from '../../images/banner.jpg'
-import ButtonModal from '../ButtonModal/ButtonModal'
-const Services = () => {
+import '../Services/Services.scss'
+import LiveTvIcon from '@mui/icons-material/LiveTv';
+import VideocamIcon from '@mui/icons-material/Videocam';
+import SecurityUpdateIcon from '@mui/icons-material/SecurityUpdate';
+
+function Services() {
     return (
-        <div className='container'>
-            <Grid container paddingY={10}>
-                <Grid item xs={6}>
-                    <span>
-                        ONLINE STREAMING
-                    </span>
-                    <h1>
-                        Live Movie & TV Shows For Friends & Family
-                    </h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consecetur adipiscing elseddo
-                        eiusmod There are many variations
-                        of passages of lorem Ipsum available,
-                        but the majority have suffered alteration.
-                    </p>
-                    <span className='hd'>
-                        HD 4K
-                    </span>
-                    <ButtonModal />
-                </Grid>
-                <Grid item xs={6}>
-                    <img src={banner} alt="" />
-                </Grid>
-            </Grid>
+        <div>
+            <div className="services">
+                <div className="services_container">
+                    
+                    <div className="services_img">
+                        <img src="https://movflxx.netlify.app/img/images/services_img.jpg" alt="" />
+                    </div>
+
+                    <div className="download">
+                        <span>
+                           DOWNLOAD <SecurityUpdateIcon className='download_icon' /> 
+                        </span>
+                        
+                    </div>
+
+                    <div className="services_text">
+                        <h6>OUR SERVICES</h6>
+                        <h1>Download Your Shows Watch Offline.</h1>
+                        <p>Lorem ipsum dolor sit amet, consecetur adipiscing elseddo eiusmod tempor.There are many variations of passages of lorem Ipsum available, but the majority have suffered alteration in some injected humour.</p>
+                        
+                        <div className="watch_box watch_box_one">
+                                <LiveTvIcon className='watch_icon'/>
+                            <div className="watch_text">
+                                <h3>Enjoy on Your TV.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, unde non.</p>
+                            </div>
+                        </div>
+                        
+                        <div className="watch_box watch_box_two">
+                                <VideocamIcon className='watch_icon'/>
+                            <div className="watch_text">
+                                <h3>Watch Everywhere.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, unde non.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     )
 }

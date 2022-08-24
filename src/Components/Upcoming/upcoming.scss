@@ -3,6 +3,7 @@ $yellow: #e4d804;
 
 
 .upcoming {
+    padding: 60px 0;
     background-color: $black;
     margin: 0;
     &__container {
@@ -12,8 +13,27 @@ $yellow: #e4d804;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            .tab-head{
+                border-radius: 50px;
+                background: #20212b;
+                font-size: 12px;
+                font-weight: 600;
+                color: #e3dfdf;
+                border: 2px solid #2d303d;
+                padding: 11px 27px;
+                margin: 12px;
+                cursor: pointer;
+                &.tab_one{
+                    border: 2px solid $yellow;
+                }
+            }
             &__text{
                 color: #fff;
+                p{
+                    font-size: 12px;
+                    color: $yellow;
+                    font-weight: bold;
+                }
             }
         }
     }

@@ -1,69 +1,90 @@
-$black: #171d22;
-$yellow: #e4d804;
+$dark: #17141A;
+$yellow: #E4D804;
 
-.icon-yellow{
-    color: $yellow;
-}
-.slider {
-    position: relative;
-    background-color: #171d22;
-    &__text {
-        position: absolute;
-        top: 25%;
-        left: 10%;
+.slider{
+    z-index: -1;
+    height: 700px;
+    width: 100%;
+    // padding: 40px 0;
+    .slider_img{
+        position: relative;
+        width: 100%;
+        object-fit: cover;
         img{
-            width: 100%;
+            
+            width: 100vw;
             height: 100vh;
         }
-        h1 {
+        .movflix_text{
+            position: absolute;
+            top: 30%;
+            left: 5%;
+        h3{
+            color: $yellow;
+            font-size: 26px;
+        }
+        h1{
+            color: white;
             font-size: 60px;
             width: 60%;
-            color: #fff;
-
-            span {
+            span{
                 color: $yellow;
             }
         }
-
-        &__logo {
-            font-size: 25px;
-            color: $yellow;
-            font-weight: bold;
-        }
-
-        &__sub {
+        .details{
+            margin: 40px 0;
             display: flex;
-            color: #fff;
-            span {
+            align-items: center;
+            .pg{
+                background-color: white;
+                padding: 5px 7px;
+                font-size: 11px;
+                margin-right: 10px;
+            }
+            .hd{
+                color: white;
+                padding: 3px 9px;
+                font-size: 11px;
+                border: 2px solid white;
+            }
+            li{
+                list-style: none;
+                color: white;
+                margin: 0 10px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+            h4{
+                list-style: none;
+                color: white;
+                margin: 0 6px;
+                font-weight: 500;
                 display: flex;
-                margin-right: 15px;
-                li{
-                    margin-right: 5px;
-                    transition: 0.3s ease-in-out;
-                    cursor: pointer;
-                    &:hover{
-                        color: $yellow;
-                    }
+                align-items: center;
+                .detail_icon{
+                    color: $yellow;
+                    font-size: 15px;
+                    margin-right: 6px;
                 }
             }
         }
-        &__btn {
-            background-color: $black;
-            font-size: 16px;
+        button{
+            padding: 13px 40px;
+            color: white;
+            background-color: $dark;
             border: 2px solid $yellow;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 50px;
-            transition: 0.3s ease-in-out;
+            border-radius: 30px;
             font-weight: bold;
+            font-size: 14px;
             cursor: pointer;
-            display: flex;
-            align-items: center;
+            transition: 0.2s ease-in-out;
             &:hover{
                 background-color: $yellow;
-                color: $black;
+                color: $dark;
             }
         }
-        
+
     }
+    }
+    
 }

@@ -17,21 +17,14 @@ function NewEpisodes() {
             <div className="movie_details">
                 <h5>New Episodes</h5>
                 <h1>The Easy <span>Reach</span> </h1>
-                <p className='slider__text__sub'>
-                            <span>
-                                <HdIcon />
-                            </span>
-                            <span>
-                                <li>Romance</li>
-                                <li>Drama</li>
-                            </span>
-                            <span>
-                                <CalendarMonthIcon className='icon-yellow' /> 2022
-                            </span>
-                            <span>
-                                <AccessTimeIcon className='icon-yellow' /> 128 min
-                            </span>
-                </p>
+                <div className="details">
+                    <h5 className='pg'>PG 18</h5>
+                    <h5 className='hd'>HD</h5>
+                    <li>Romance,</li>
+                    <li>Drama</li>
+                    <h4> <CalendarMonthIcon className='detail_icon' /> 2022</h4>
+                    <h4><AccessTimeIcon className='detail_icon' />128 min</h4>
+                </div>
                 <p className='about_movie'>
                 Lorem ipsum dolor sit amet, consecetur adipiscing elseddo eiusmod tempor.There are many variations of passages of lorem Ipsum available, but the majority have suffered alteration in some injected humour.
                 </p>

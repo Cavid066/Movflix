@@ -1,0 +1,111 @@
+$dark: #17141A;
+$yellow: #E4D804;
+
+.onlineStreaming_container {
+    background-image: url(https://themebeyond.com/html/movflx/img/bg/live_bg.jpg);
+    padding: 60px 0;
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    margin: auto;
+
+    .movie_name {
+        padding-left: 100px;
+        span {
+            padding-left: 45px;
+            color: #656363;
+            font-size: 12px;
+            font-weight: 500;
+            position: relative;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 7px;
+                width: 40px;
+                height: 3.3px;
+                background-color: $yellow;
+            }
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: bold;
+            width: 80%;
+        }
+
+        p {
+            color: #6a6a6a;
+            font-size: 14px;
+            font-weight: 600;
+            width: 80%;
+            line-height: 25px;
+            margin: 18px 0;
+        }
+
+        .quality {
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 30px;
+            h1 {
+                font-size: 60px;
+                text-shadow: 0px 3px 24px rgb(160 160 160 / 9%);
+                color: #d81c2b;
+                margin-right: 20px;
+                -webkit-text-fill-color: white;
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: #d81c2b;
+            }
+
+            .count {
+                margin-bottom: -40px;
+                padding-right: 200px;
+                line-height: 1px;
+                h3 {
+                    font-size: 38px;
+                    color: #1e1b29;
+                }
+                p{
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #1e1b29;
+                    width: 100%;
+                }
+            }
+
+        }
+
+        .watch{
+            padding: 13px 40px;
+            color: $dark;
+            background-color: $yellow;
+            border: 2px solid $yellow;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+            box-shadow: 0px 3px 24px 0px rgb(160 160 160 / 50%);
+            &:hover{
+                background-color: white;
+                color: $dark;
+                border: 2px solid $yellow;
+                box-shadow: none;
+            }
+        }
+
+
+    }
+
+    .movie_photo {
+        width: 50%;
+    }
+}

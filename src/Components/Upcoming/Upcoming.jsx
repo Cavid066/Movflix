@@ -29,7 +29,7 @@ function Upcoming() {
         {...other}
       >
         {value === index && (
-          <Box sx={{ p: 3 }}>
+          <Box sx={{ p: 3, }}>
             <Typography>{children}</Typography>
           </Box>
         )}
@@ -53,7 +53,17 @@ function Upcoming() {
               {
                 categories &&
                 categories.map((category, key) => (
-                  <Tab key={key} label={category.name} />
+                  <Tab 
+                  // sx={{
+                  //     border-radius: 50,
+                  //     font-size: 12,
+                  //     font-weight: 600,
+                  //     color: '#e3dfdf',
+                  //     border: 2 solid yellow,
+                  //     padding: 11 27,
+                  //     margin: 12,
+                  //     cursor: pointer }}  
+                      key={key} label={category.name} />
                 ))
               }
             </Tabs>

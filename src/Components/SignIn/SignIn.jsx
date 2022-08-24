@@ -15,7 +15,7 @@ function SignIn() {
           (
             <>
               <button className='btn'>
-                Sign In
+                SIGN IN
               </button>
             </>
           )

@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect,  } from "react";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
-import { UserContext } from "./Context/UserContext";
-import Home from "./page/Home";
+// import { UserContext } from "./Context/UserContext";
 import MyRoute from "./Router/MyRoute";
 
 

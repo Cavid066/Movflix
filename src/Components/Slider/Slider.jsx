@@ -1,111 +1,66 @@
 import React from 'react'
-import { Swiper, SwiperSlide,useSwiper } from 'swiper/react';
-import HdIcon from '@mui/icons-material/Hd';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+// import '../Slider/Slider.scss';
+import '../Slider/slider.scss'
+// import LocalMoviesIcon from '@mui/icons-material/LocalMovies';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import { Navigation } from "swiper";
-import 'swiper/css';
-import "swiper/css/navigation";
-import '../Slider/slider.scss'
+
 function Slider() {
-    const swiper = useSwiper();
-    console.log(swiper);
     return (
-        <Swiper
-            spaceBetween={50}
-            slidesPerView={1}
-            modules={[Navigation]} 
-            navigation={true}
-        >
-            <SwiperSlide>
-                <div className='slider'>
-                    <img src="https://movflxx.netlify.app/img/banner/banner_bg01.jpg" alt="" />
-                    <div className='slider__text'>
-                        <p className='slider__text__logo'>ComparFlix</p>
-                        <p>
-                            <h1>Unlimited <span>Movie</span>, TVs Shows, & More.</h1>
-                        </p>
-                        <p className='slider__text__sub'>
-                            <span>
-                                <HdIcon />
-                            </span>
-                            <span>
-                                <li>Romance</li>
+        <div className="slider">
+            <Swiper className="mySwiper">
+                <SwiperSlide>
+                    <div className="slider_img">
+                        <img src="https://movflxx.netlify.app/img/banner/banner_bg01.jpg" alt="" />
+                        <div className='movflix_text'>
+                            <div className="top_text">
+                                <h3>Movflx</h3>
+                                <h1>Unlimited <span>Movie</span>, TVs Shows, & More.</h1>
+                            </div>
+                            <div className="details">
+                                <h5 className='pg'>PG 18</h5>
+                                <h5 className='hd'>HD</h5>
+                                <li>Romance,</li>
                                 <li>Drama</li>
-                            </span>
-                            <span>
-                                <CalendarMonthIcon className='icon-yellow' /> 2022
-                            </span>
-                            <span>
-                                <AccessTimeIcon className='icon-yellow' /> 128 min
-                            </span>
-                        </p>
-                        <button onClick={() => swiper.slideNext()} className='slider__text__btn'>
-                            <PlayArrowIcon />  <span>Whatch Now</span>
-                        </button>
+                                <h4> <CalendarMonthIcon className='detail_icon' /> 2022</h4>
+                                <h4><AccessTimeIcon className='detail_icon' />128 min</h4>
+                            </div>
+                            <button>WATCH NOW</button>
+                        </div>
                     </div>
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className='slider'>
-                    <img src="https://movflxx.netlify.app/img/banner/banner_bg01.jpg" alt="" />
-                    <div className='slider__text'>
-                        <p className='slider__text__logo'>ComparFlix</p>
-                        <p>
-                            <h1>Unlimited <span>Movie</span>, TVs Shows, & More.</h1>
-                        </p>
-                        <p className='slider__text__sub'>
-                            <span>
-                                <HdIcon />
-                            </span>
-                            <span>
-                                <li>Romance</li>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <div className="slider_img">
+                        <img src="https://occ-0-1567-300.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABTAH2e0NA2CoezoBJfVTh4dIvdQWcFcZielMUf9VEWZJFk0bys6yAEl_h5RPoIwh6muQbXaTJP4H9WPwAWUQLZPV3cE9HsWSPOUR.jpg?r=6a0" alt="" />
+                        <div className='movflix_text'>
+                            <div className="top_text">
+                                <h3>Movflx</h3>
+                                <h1>Unlimited <span>Movie</span>, TVs Shows, & More.</h1>
+                            </div>
+                            <div className="details">
+                                <h5 className='pg'>PG 18</h5>
+                                <h5 className='hd'>HD</h5>
+                                <li>Romance,</li>
                                 <li>Drama</li>
-                            </span>
-                            <span>
-                                <CalendarMonthIcon className='icon-yellow' /> 2022
-                            </span>
-                            <span>
-                                <AccessTimeIcon className='icon-yellow' /> 128 min
-                            </span>
-                        </p>
-                        <button className='slider__text__btn'>
-                            <PlayArrowIcon />  <span>Whatch Now</span>
-                        </button>
+                                <h4>2022</h4>
+                                <h4>128 min</h4>
+                            </div>
+                            <button>WATCH NOW</button>
+                        </div>
                     </div>
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className='slider'>
-                    <img src="https://movflxx.netlify.app/img/banner/banner_bg01.jpg" alt="" />
-                    <div className='slider__text'>
-                        <p className='slider__text__logo'>ComparFlix</p>
-                        <p>
-                            <h1>Unlimited <span>Movie</span>, TVs Shows, & More.</h1>
-                        </p>
-                        <p className='slider__text__sub'>
-                            <span>
-                                <HdIcon />
-                            </span>
-                            <span>
-                                <li>Romance</li>
-                                <li>Drama</li>
-                            </span>
-                            <span>
-                                <CalendarMonthIcon className='icon-yellow' /> 2022
-                            </span>
-                            <span>
-                                <AccessTimeIcon className='icon-yellow' /> 128 min
-                            </span>
-                        </p>
-                        <button className='slider__text__btn'>
-                            <PlayArrowIcon />  <span>Whatch Now</span>
-                        </button>
-                    </div>
-                </div>
-            </SwiperSlide>
-        </Swiper>
+                </SwiperSlide>
+
+
+
+
+
+            </Swiper>
+
+        </div>
+
     )
 }
 

@@ -1,8 +1,12 @@
 $black: #171d22;
 $yellow: #e4d804;
 
+a{
+    text-decoration: none;
+}
 
 .poster {
+    
     img {
         width: 100%;
         border-radius: 10px;
@@ -12,7 +16,7 @@ $yellow: #e4d804;
         display: flex;
         justify-content: space-between;
         color: #fff;
-
+        margin: 15px 0;
         &__year {
             color: $yellow;
         }
@@ -23,13 +27,27 @@ $yellow: #e4d804;
         justify-content: space-between;
         color: #fff;
         align-items: center;
+        h4 {
+            border: 2px solid white;
+            padding: 2px 11px;
+            color: $yellow;
+            font-size: 12px;
+        }
         &__info {
             display: flex;
             span {
                 display: flex;
+                color: #bcbcbc;
+    font-size: 12px;
                 align-items: center;
                 align-content: center;
                 margin-left: 15px;
+                .duration,
+                    .like {
+                        font-size: 16px;
+                        color: $yellow;
+                        margin-right: 4px;
+                    }
             }
         }
     }

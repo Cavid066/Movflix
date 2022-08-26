@@ -28,7 +28,7 @@ function UpcomingSlider({category}) {
                     <SwiperSlide key={key}>
                         <Link to={`movie/detail/${movie.id}`}>
                         <div className='poster'>
-                            <img src={movie.photo} alt="" />
+                            <img src={movie.image} alt="" />
                             <div className='poster__top'>
                                 <span className='poster__top__name'>{movie.name}</span>
                                 <span className='poster__top__year'>{movie.year}</span>

@@ -7,7 +7,7 @@ import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import '../AccordionMenu/AccordionMenu.scss'
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+// import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import EpisodeButton from '../EpisodeButton/EpisodeButton'
 
 const Accordion = styled((props) => (
@@ -88,6 +88,7 @@ export default function CustomizedAccordions() {
             </div>
           
           </Typography>
+
           <Typography className='episode_details'>
           <EpisodeButton/>
             <div className="duration">
@@ -95,6 +96,7 @@ export default function CustomizedAccordions() {
             </div>
           
           </Typography>
+          
           <Typography className='episode_details'>
           <EpisodeButton/>
             <div className="duration">
@@ -113,68 +115,6 @@ export default function CustomizedAccordions() {
         </AccordionDetails>
       </Accordion>
 
-
-
-      <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
-        <AccordionSummary  
-          sx={{
-            color: 'white',
-            background: 'black',
-          }} className='tab_headd' aria-controls="panel1d-content" id="panel1d-header">
-          <Typography className='tab_head'>
-            <h3>Season 1</h3>
-            <h5>5 Full Episodes</h5> </Typography>
-        </AccordionSummary>
-        <AccordionDetails className='accordion_details'>
-
-          <Typography className='episode_details'>
-            <div className="episode_no">
-                <span> <PlayArrowIcon className='play_icon'/> Episode 1 - The World Is Purple</span> 
-            </div>
-            <div className="duration">
-                <span><AccessTimeIcon className='duration_icon'/>  28 Min</span>
-            </div>
-          
-          </Typography>
-          <Typography className='episode_details'>
-            <div className="episode_no">
-                <span> <PlayArrowIcon className='play_icon'/> Episode 2 - Meaner Than Evil</span> 
-            </div>
-            <div className="duration">
-                <span><AccessTimeIcon className='duration_icon'/>  28 Min</span>
-            </div>
-          
-          </Typography>
-          <Typography className='episode_details'>
-            <div className="episode_no">
-                <span> <PlayArrowIcon className='play_icon'/> Episode 3 - I Killed a Man Today</span> 
-            </div>
-            <div className="duration">
-                <span><AccessTimeIcon className='duration_icon'/>  28 Min</span>
-            </div>
-          
-          </Typography>
-          <Typography className='episode_details'>
-            <div className="episode_no">
-                <span> <PlayArrowIcon className='play_icon'/>   Episode 4 - Cowboys and Dreamers</span> 
-            </div>
-            <div className="duration">
-                <span><AccessTimeIcon className='duration_icon'/>  28 Min</span>
-            </div>
-          
-          </Typography>
-          <Typography className='episode_details'>
-            <div className="episode_no">
-                <span> <PlayArrowIcon className='play_icon'/>  Episode 1 - The World Is Purple</span> 
-            </div>
-            <div className="duration">
-                <span><AccessTimeIcon className='duration_icon'/>  28 Min</span>
-            </div>
-          
-          </Typography>
-          
-        </AccordionDetails>
-      </Accordion>
     </div>
   );
 }

@@ -1,49 +1,23 @@
-import { GET_MOVIES } from "../constants/MovieConstants"
+import { BASE_URL } from "../../config/api"
+import { GET_MOVIES, GET_MOVIE_BY_ID } from "../constants/MovieConstants"
 
 export const getMoviesAction = () => async(dispatch,getState)=>{
 
-    let movies = [
-        {
-            id: 1,
-            name: "Women's Day",
-            year: 2020,
-            time: "128 min",
-            like: 3.5,
-            photo: "https://themebeyond.com/html/movflx/img/poster/ucm_poster01.jpg",
-            category:"Tv Show"
-        },
-        {
-            id: 2,
-            name: "Women's Day",
-            year: 2022,
-            time: "128 min",
-            like: 3.5,
-            photo: "https://themebeyond.com/html/movflx/img/poster/ucm_poster02.jpg",
-            category:"Tv Show"
-        },
-        {
-            id: 3,
-            name: "Women's Day",
-            year: 2022,
-            time: "128 min",
-            like: 3.5,
-            photo: "https://themebeyond.com/html/movflx/img/poster/ucm_poster03.jpg",
-            category:"Movies"
-        },
-        {
-            id: 4,
-            name: "Women's Day",
-            year: 2022,
-            time: "128 min",
-            like: 3.5,
-            photo: "https://themebeyond.com/html/movflx/img/poster/ucm_poster04.jpg",
-            category:"Anime"
-        }
-    ]
+    let movies = await (await fetch(`${BASE_URL}/series`)).json()
 
 
     dispatch({
         type: GET_MOVIES,
         payload: movies
+    })
+}
+
+export const getMoviesById = (id) => async (dispatch, getState) => {
+
+    let movie = await (await fetch(`${BASE_URL}/series?id=${id}`)).json()
+
+    dispatch({
+        type: GET_MOVIE_BY_ID,
+        payload: movie
     })
 }

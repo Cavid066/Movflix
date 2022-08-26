@@ -1,0 +1,54 @@
+$dark: #17141A;
+$yellow: #E4D804;
+
+
+.contacts_top{
+    // position: absolute;
+    top: -1%;
+    width: 100%;
+    z-index: -1;
+    height: 600px;
+    background-image: url(https://themebeyond.com/html/movflx/img/bg/breadcrumb_bg.jpg);
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    .contacts{
+        position: absolute;
+        left: 40%;
+        top: 40%;
+        color: white;
+        text-align: center;
+        margin: auto;
+        h1{
+            font-size: 60px;
+            font-weight: 700;
+            span{
+                color: $yellow;
+            }
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            font-weight: 600;
+            li{
+               &.home{
+                a{
+                text-decoration: none;
+                }
+                cursor: pointer;
+                margin-right: 30px;
+                position: relative;
+                color: $yellow;
+                &::after{
+                    position: absolute;
+                    content: '|';
+                    color: #E4D804;
+                    left: 60px;
+                }
+            } 
+            }
+            
+        }
+    }
+}

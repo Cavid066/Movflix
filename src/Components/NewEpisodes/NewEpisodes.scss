@@ -13,8 +13,13 @@ $yellow: #e4d804;
         margin: auto;
         display: grid;
         grid-template-columns: 30% 50% 20%;
-
+        // .movie_image{
+        //     width: 350px;
+        //     height: 400px;
+        // }
         img {
+            width: 350px;
+            // height: 400px;
             border-radius: 5px;
         }
         .movie_details {

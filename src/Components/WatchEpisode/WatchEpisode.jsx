@@ -3,7 +3,7 @@ import '../WatchEpisode/WatchEpisode.scss'
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import AccordionMenu from '..//AccordionMenu/AccordionMenu'
 
-function WatchEpisode() {
+function WatchEpisode({seasons}) {
     return (
         <div className='watch_episode'>
             <div className="watch_episode_container">
@@ -19,7 +19,13 @@ function WatchEpisode() {
                             </div>
                         </div>
                         <div className="episode_names">
-                            <AccordionMenu />
+                            {
+                                seasons &&
+                                seasons.map(x=>(
+                                    <AccordionMenu />
+                                ))
+                            }
+                            
                         </div>
                     </div>
 

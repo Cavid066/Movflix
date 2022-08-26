@@ -7,12 +7,12 @@ import SecurityUpdateIcon from '@mui/icons-material/SecurityUpdate';
 import ShareIcon from '@mui/icons-material/Share';
 import NewEpisodesButton from '../NewEpisodesButton/NewEpisodesButton';
 
-function NewEpisodes() {
+function NewEpisodes({moviesDetail}) {
   return (
     <div className='new_episodes'>
         <div className="new_episodes_container">
             <div className="movie_image">
-                <img src="https://movflxx.netlify.app/img/poster/movie_details_img.jpg" alt="" />
+                <img src={moviesDetail.image} alt="" />
             </div>
             <div className="movie_details">
                 <h5>New Episodes</h5>

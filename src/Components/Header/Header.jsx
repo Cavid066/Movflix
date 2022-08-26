@@ -32,7 +32,9 @@ function Header() {
                                 </ul>
                             </div>
                         </li>
-                        <li>TV SHOW</li>
+                        <li className='tv_show'>
+                        <Link to="/tvshow">TV SHOW</Link>
+                        </li>
                         <li className='pricing'> 
                          <Link to="/pricing">PRICING</Link></li>
                         
@@ -44,7 +46,8 @@ function Header() {
                                 </ul>
                             </div>
                         </li>
-                        <li>CONTACTS</li>
+                        <li className='contacts'>
+                        <Link to="/contacts">CONTACTS</Link></li>
                     </ul>
                 </div>
                 <div className='nav_bar_side'>
